@@ -85,6 +85,7 @@ class LinksController < ApplicationController
   end
 
   def populares
+    @links = Link.joins(:visualizacoes).select("COUNT(\"links\".id) as quantidade, \"links\".id").group("\"links\".id").order("quantidade DESC").limit(10)
   end
 
   def desencurta

@@ -1,3 +1,9 @@
 <% if usuario_signed_in? %>
+	Bem vindo, <%= current_usuario.nome + " " + current_usuario.sobrenome %><br />
 	<%= link_to "Encurtar link", new_link_path %>
 <%end%>
+<h4>Links populares</h4>
+<% @links.each do |link| %>
+Encurtado: <%= "localhost:3000/g/#{link.id}" %>, Quantidade: <%= link.quantidade %> <br />
+<%end%>
+

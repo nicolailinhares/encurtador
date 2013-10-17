@@ -11,14 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131017224447) do
+ActiveRecord::Schema.define(:version => 20131017232725) do
 
   create_table "links", :force => true do |t|
-    t.string   "url"
-    t.string   "publicidade"
+    t.text     "url",         :limit => 255
+    t.text     "publicidade", :limit => 255
     t.integer  "usuario_id"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",                 :null => false
+    t.datetime "updated_at",                 :null => false
   end
 
   add_index "links", ["usuario_id"], :name => "index_links_on_usuario_id"
