@@ -1,4 +1,4 @@
-class ChangeLinksTable < ActiveRecord::Migration
+class AlterLinksTable < ActiveRecord::Migration
   def up
   	change_column :links, :url, :text
   	change_column :links, :publicidade, :text
