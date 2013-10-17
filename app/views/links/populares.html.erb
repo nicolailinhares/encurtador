@@ -4,6 +4,6 @@
 <%end%>
 <h4>Links populares</h4>
 <% @links.each do |link| %>
-Encurtado: <%= "localhost:3000/g/#{link.id}" %>, Quantidade: <%= link.quantidade %> <br />
+Encurtado: <%= "#{root_url}g/#{link.id}" %>, Quantidade: <%= link.quantidade %> <br />
 <%end%>
 
