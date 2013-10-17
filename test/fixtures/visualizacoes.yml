@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  pais: MyString
+  regiao: MyString
+  cidade: MyString
+  link: 
+
+two:
+  pais: MyString
+  regiao: MyString
+  cidade: MyString
+  link: 

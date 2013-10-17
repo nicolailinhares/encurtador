@@ -1,0 +1,11 @@
+<% if @habilitado %>
+<h3>Você será redirecionado em instantes</h3>
+
+<%= image_tag @link.publicidade %>
+
+<script type="text/javascript">
+	setInterval(redireciona("<%= @link.url %>"),5000)
+</script>
+<% else %>
+<h3>Link indisponível</h3>
+<% end %>

@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Url:</b>
+  <%= @link.url %>
+</p>
+
+<p>
+	<b>Encurtado:</b>
+	<%= "localhost:3000/g/#{@link.id}" %>
+</p>
+
+<p>
+  <b>Publicidade:</b>
+  <%= image_tag @link.publicidade %>
+</p>
+
+<p>
+  <b>Usuario:</b>
+  <%= @link.usuario.nome %>
+</p>
+
+
+<%= link_to 'Edit', edit_link_path(@link) %> |
+<%= link_to 'Back', links_path %>
